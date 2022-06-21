@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar bg-light">
+  <nav class="navbar fixed-top bg-light">
     <div class="container">
       <div class="d-flex ms-5">
         <div class="me-2"><i class="fa-brands fa-2x fa-instagram text-muted"></i></div>
@@ -24,24 +24,6 @@
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Create a new post
         </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <input class="p-3 w-100" type="text">
-              </div>
-              <div class="modal-body p-0">
-                <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
-                <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-success">Publish</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="btn-group">
           <button type="button" class="dropdown-toggle btn btn-light " data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-gear"></i>
@@ -60,16 +42,32 @@
     </div>
   </nav>
 
-  <div class="row">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <input class="p-3 w-100" type="text">
+        </div>
+        <div class="modal-body p-0">
+          <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+          <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5 pt-4">
     <div class="col-12 col-md-2 mx-auto">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-            type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
-              class="fa-solid fa-forward-fast"></i></button>
+            type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
           <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
-            role="tab" aria-controls="nav-profile" aria-selected="false"><i
-              class="fa-solid fa-forward-fast"></i></button>
+            role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
         </div>
       </nav>
     </div>
